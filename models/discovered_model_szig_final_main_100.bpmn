@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.signavio.com/bpmn20" typeLanguage="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.w3.org/1999/XPath">
+	<bpmn:process id="id442f2d9a-558e-467d-b849-e4ce8aab9307" isClosed="false" isExecutable="false" processType="None">
+		<bpmn:endEvent id="idf3daac3b-23f4-45fe-862e-556b90b6ee7e" name="end">
+			<bpmn:incoming>id9086a062-d87d-4e3e-8a3b-529b91080b06</bpmn:incoming>
+		</bpmn:endEvent>
+		<bpmn:startEvent id="id88596b77-a15a-4598-8615-c39aa762e5b9" isInterrupting="true" name="start" parallelMultiple="false">
+			<bpmn:outgoing>id9086a062-d87d-4e3e-8a3b-529b91080b06</bpmn:outgoing>
+		</bpmn:startEvent>
+		<bpmn:sequenceFlow id="id9086a062-d87d-4e3e-8a3b-529b91080b06" name="" sourceRef="id88596b77-a15a-4598-8615-c39aa762e5b9" targetRef="idf3daac3b-23f4-45fe-862e-556b90b6ee7e"/>
+	</bpmn:process>
+	<bpmndi:BPMNDiagram id="idc3fc5896-b306-441d-ad2d-d09d51770589" name="diagram">
+		<bpmndi:BPMNPlane bpmnElement="id442f2d9a-558e-467d-b849-e4ce8aab9307" id="ide935adbe-cc23-47a8-b30d-b322b5eaa54a">
+			<bpmndi:BPMNShape bpmnElement="idf3daac3b-23f4-45fe-862e-556b90b6ee7e" id="idf3daac3b-23f4-45fe-862e-556b90b6ee7e_gui">
+				<omgdc:Bounds height="30" width="30" x="3750" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNShape bpmnElement="id88596b77-a15a-4598-8615-c39aa762e5b9" id="id88596b77-a15a-4598-8615-c39aa762e5b9_gui">
+				<omgdc:Bounds height="30" width="30" x="0" y="0"/>
+			</bpmndi:BPMNShape>
+			<bpmndi:BPMNEdge bpmnElement="id9086a062-d87d-4e3e-8a3b-529b91080b06" id="id9086a062-d87d-4e3e-8a3b-529b91080b06_gui">
+				<omgdi:waypoint x="30" y="15"/>
+				<omgdi:waypoint x="1890.0" y="15"/>
+				<omgdi:waypoint x="1890.0" y="15"/>
+				<omgdi:waypoint x="3750" y="15"/>
+			</bpmndi:BPMNEdge>
+		</bpmndi:BPMNPlane>
+	</bpmndi:BPMNDiagram>
+</bpmn:definitions>
