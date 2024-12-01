@@ -22,7 +22,7 @@ A `processDiscovery` repository célja a különböző forrásokból számrazó 
      ```bash
      python camunda_log_filter.py
      ```
-   - Idomsoftos napló esetén az `idom_log_filter.py` szkriptet szükséges futtatni:
+   - Idomsoftos napló esetén az `idom_log_filter.py` szkriptet szükséges futtatni. Sokkal lassabban fut le mint a Camunda logjait tisztító program.:
      ```bash
      python idom_log_filter.py
      ```
@@ -31,7 +31,7 @@ A `processDiscovery` repository célja a különböző forrásokból számrazó 
    ```bash
    python process_discovery.py
 
-3. **Folyamatmodellek összehasonlítása**: Folyamatbányászat során generált folyamatábrák a `similarity_check.py` szkript futtatásával összehasonlíthatk a NetworkX könyvtár segítségével (gráf alapú összevetés):
+3. **Folyamatmodellek összehasonlítása**: Folyamatbányászat során generált folyamatábrák a `similarity_check.py` szkript futtatásával összehasonlíthatók a NetworkX könyvtár segítségével (gráf alapú összevetés). Mivel a gráfok túl bnagyok ahhoz, hogy belátható időn belül lefusson az algoritmus, így az edit_distance függvény timeout paraméterét változtatva másodpercekben megadható, hogy mennyi ideig fusson az algoritmus. Az idő leteltével az addigi legjobb (legkisebb) eredményt adja vissza.:
    ```bash
    python similarity_check.py ```
 
